@@ -72,8 +72,8 @@ Evalué el impacto del tratamiento con **Pandas, Matplotlib y SciPy**.
 ### 4. Dashboards en Power BI
 Construí **dos dashboards interactivos** con comunicación ejecutiva basada en el método **C-F-I** (Contexto, Hallazgo, Implicación).
 
-> 🖼️ _Overview_`![Dashboard 1](Overview.png)`
-> 🖼️ _Análisis detallado_`![Dashboard 2](Análisis detallado.png)`
+> 🖼️ _Overview_ ![Dashboard 1](https://github.com/egomez-DA/Proyecto-Final-RappiPlus-De-datos-a-decisiones-de-negocio/blob/e9afb93f2d2b101f79d7b13020828d0eafadcc62/Overview.png)
+> 🖼️ _Análisis detallado_ ![Dashboard 2](https://github.com/egomez-DA/Proyecto-Final-RappiPlus-De-datos-a-decisiones-de-negocio/blob/e9afb93f2d2b101f79d7b13020828d0eafadcc62/An%C3%A1lisis%20detallado.png)
 
 ## ✅ Recomendaciones accionables
 
