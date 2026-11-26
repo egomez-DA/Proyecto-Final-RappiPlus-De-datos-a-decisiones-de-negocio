@@ -88,7 +88,7 @@ Construí **dos dashboards interactivos** con comunicación ejecutiva basada en 
 ## ▶️ Cómo reproducir el análisis
 
 1. Abre `S12 Estudiante_Proyecto_Final.ipynb` en GitHub y haz clic en **Open in Colab**
-   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/egomez-DA/Proyecto-Final-RappiPlus-De-datos-a-decisiones-de-negocio/blob/main//notebooks/S12%20Estudiante_Proyecto_Final.ipynb)
+   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/egomez-DA/Proyecto-Final-RappiPlus-De-datos-a-decisiones-de-negocio/blob/main//notebooks/S12_Estudiante_Proyecto_Final.ipynb)
 2. Ejecuta las celdas en orden.
 3. El notebook carga automáticamente el dataset desde `/data/` o desde un enlace público, según corresponda.
 
