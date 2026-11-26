@@ -85,10 +85,11 @@ Construí **dos dashboards interactivos** con comunicación ejecutiva basada en 
 
 - `S12 Estudiante_Proyecto_Final.ipynb`: notebook principal con limpieza, EDA, distribuciones, outliers, consultas SQL y conclusiones.
 
-## ▶️ Cómo reproducir el análisis
+## ▶ Cómo abrir el notebook en Google Colab
 
-1. Abre `S12 Estudiante_Proyecto_Final.ipynb` en GitHub y haz clic en **Open in Colab**
+1. Haz clic en el siguiente botón:
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/egomez-DA/Proyecto-Final-RappiPlus-De-datos-a-decisiones-de-negocio/blob/main/S12_Estudiante_Proyecto_Final.ipynb)
+
 2. Ejecuta las celdas en orden.
 3. El notebook carga automáticamente el dataset desde `/data/` o desde un enlace público, según corresponda.
 
