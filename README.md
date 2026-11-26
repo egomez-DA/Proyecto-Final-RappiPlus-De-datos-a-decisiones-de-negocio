@@ -1,4 +1,4 @@
-# 🛵 RappiPlus: De datos a decisiones de negocio
+# 💡 RappiPlus: De datos a decisiones de negocio
 
 ![Estado](https://img.shields.io/badge/Estado-Completado-2ea44f?style=for-the-badge)
 ![Tipo](https://img.shields.io/badge/Proyecto-Análisis_de_datos-295F98?style=for-the-badge)
@@ -34,15 +34,13 @@
 
 ## 🗺️ Flujo del proyecto
 
-```mermaid
-flowchart TD
-    A[📥 Datos crudos] --> B[🧹 Preparación y calidad de datos<br/>Python]
-    B --> C[💰 Rentabilidad del negocio<br/>Python]
-    B --> D[🔻 Funnel de conversión<br/>SQL]
-    B --> E[📅 Retención por cohortes<br/>SQL]
-    B --> F[🧪 Experimento A/B<br/>Python]
-    C & D & E & F --> G[📊 Dashboards e insights<br/>Power BI]
-```
+1. 📥 **Datos crudos**
+2. 🧹 **Preparación y calidad de datos** con Python
+3. 💰 **Análisis de rentabilidad** del negocio con Python
+4. 🔻 **Análisis del funnel de conversión** con SQL
+5. 📅 **Análisis de retención por cohortes** con SQL
+6. 🧪 **Evaluación de impacto (experimentación A/B)** con Python
+7. 📊 **Construcción del dashboard** y comunicación de insights con Power BI
 
 ## 📂 Datasets
 
@@ -56,10 +54,10 @@ flowchart TD
 ## 🔍 Resultados del análisis
 
 ### 1. Preparación y calidad de datos
-Limpié y validé los datos, revisando su calidad antes de cualquier análisis.
+Procesamiento de datos: limpié y validé los datos, revisando su calidad antes de cualquier análisis.
 
-### 2. Funnel de conversión y retención (SQL + Python)
-Con **SQL (CTEs)** y Python construí embudos multietapa para analizar conversión y retención por cohortes.
+### 2. Funnel de conversión y retención (SQL)
+Con **SQL (CTEs)** construí embudos multietapa para analizar conversión y retención por cohortes.
 
 - 🔻 La mayor pérdida de usuarios ocurre entre `add_to_cart` y `begin_checkout`: **2,339 usuarios**.
 - 📉 La conversión final del funnel es de **2.94 %**.
@@ -74,7 +72,8 @@ Evalué el impacto del tratamiento con **Pandas, Matplotlib y SciPy**.
 ### 4. Dashboards en Power BI
 Construí **dos dashboards interactivos** con comunicación ejecutiva basada en el método **C-F-I** (Contexto, Hallazgo, Implicación).
 
-> 🖼️ _Aquí puedes insertar capturas de pantalla:_ `![Dashboard](img/dashboard1.png)`
+> 🖼️ _Overview_`![Dashboard](img/Overview.png)`
+> 🖼️ _Análisis detallado_`![Dashboard](img/Análisis detallado.png)`
 
 ## ✅ Recomendaciones accionables
 
@@ -84,12 +83,12 @@ Construí **dos dashboards interactivos** con comunicación ejecutiva basada en 
 
 ## 📁 Contenido del repositorio
 
-- `S12 Estudiante_Proyecto_Final.ipynb`: notebook principal con limpieza, EDA, distribuciones, outliers y conclusiones.
+- `S12 Estudiante_Proyecto_Final.ipynb`: notebook principal con limpieza, EDA, distribuciones, outliers, consultas SQL y conclusiones.
 
 ## ▶️ Cómo reproducir el análisis
 
 1. Abre `S12 Estudiante_Proyecto_Final.ipynb` en GitHub y haz clic en **Open in Colab**
-   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/TU_USUARIO/TU_REPO/blob/main/S12%20Estudiante_Proyecto_Final.ipynb)
+   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/egomez-DA/Proyecto-Final-RappiPlus-De-datos-a-decisiones-de-negocio/blob/main/S12%20Estudiante_Proyecto_Final.ipynb)
 2. Ejecuta las celdas en orden.
 3. El notebook carga automáticamente el dataset desde `/data/` o desde un enlace público, según corresponda.
 
