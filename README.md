@@ -1,38 +1,98 @@
-# Proyecto Final-RappiPlus: De datos a decisiones de negocio
+# 🛵 RappiPlus: De datos a decisiones de negocio
 
-- Este repositorio contiene el análisis para entender el desempeño del servicio RappiPlus y detectar oportunidades concretas de mejora.
+![Estado](https://img.shields.io/badge/Estado-Completado-2ea44f?style=for-the-badge)
+![Tipo](https://img.shields.io/badge/Proyecto-Análisis_de_datos-295F98?style=for-the-badge)
 
-📂 Dataset del proyecto
-El análisis de preparación y calidad de datos con Python comienza con tres fuentes principales:
+> Análisis integral del servicio de suscripción **RappiPlus**: rentabilidad, conversión, retención y experimentación A/B, comunicado en dashboards ejecutivos.
 
-- rappiplus_orders_raw.csv
-- rappiplus_catalog.csv
-- rappiplus_marketing_spend.csv
+---
 
-- Para la experimentación A/B, se trabaja con el dataset:
-- experiment_checkout.csv
+## 📌 Contexto y objetivo
 
-## 📂 Contenido del repositorio
+**RappiPlus** es un servicio de suscripción dentro del ecosistema de Rappi, diseñado para aumentar la frecuencia de compra y el valor generado por usuario.
 
-- `S12 Estudiante_Proyecto_Final.ipynb`
--  → Notebook principal con limpieza, EDA, distribuciones, outliers y conclusiones.
+🎯 **Objetivo:** entender el desempeño del servicio y detectar oportunidades de mejora concretas a partir de los datos.
 
-## ▶ Cómo abrir el notebook en Google Colab
+## ❓ Preguntas clave
 
-1. Abre el archivo `S12 Estudiante_Proyecto_Final.ipynb` en GitHub
-2. Haz clic en **Open in Colab**
+1. ¿Los usuarios realmente compran más?
+2. ¿El modelo está generando ganancias?
+3. ¿Se están perdiendo oportunidades en el proceso de compra?
 
-## 📘 Cómo reproducir el análisis
+## 🛠️ Herramientas
 
-1. Abre `S12 Estudiante_Proyecto_Final.ipynb`
-2. Ejecuta las celdas en orden
-3. El notebook carga automáticamente el dataset desde `/data/` o desde un enlace público (según corresponda)
+![Python](https://img.shields.io/badge/Python-357ebd?style=for-the-badge&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-357ebd?style=for-the-badge&logo=pandas&logoColor=white)
+![SciPy](https://img.shields.io/badge/SciPy-357ebd?style=for-the-badge&logo=scipy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-357ebd?style=for-the-badge)
+![Seaborn](https://img.shields.io/badge/Seaborn-357ebd?style=for-the-badge)
+![SQL](https://img.shields.io/badge/SQL_(CTEs)-357ebd?style=for-the-badge)
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 
-## 🧠 Objetivo del análisis
+**Habilidades aplicadas:** limpieza de datos · transformación · análisis de rentabilidad · funnel de conversión · retención por cohortes · experimentación A/B · visualización y storytelling con datos
 
-- Paso 1: Preparación y calidad de datos con Python.
-- Paso 2: Análisis de rentabilidad del negocio con Python
-- Paso 3: Análisis del funnel de conversión con SQL.
-- Paso 4: Análisis de retención por cohortes con SQL.
-- Paso 5: Evaluación de impacto (experimentación A/B) con Python.
-- Paso 6: Construcción del dashboard y comunicación de insights.
+## 🗺️ Flujo del proyecto
+
+```mermaid
+flowchart TD
+    A[📥 Datos crudos] --> B[🧹 Preparación y calidad de datos<br/>Python]
+    B --> C[💰 Rentabilidad del negocio<br/>Python]
+    B --> D[🔻 Funnel de conversión<br/>SQL]
+    B --> E[📅 Retención por cohortes<br/>SQL]
+    B --> F[🧪 Experimento A/B<br/>Python]
+    C & D & E & F --> G[📊 Dashboards e insights<br/>Power BI]
+```
+
+## 📂 Datasets
+
+| Etapa | Archivo |
+|---|---|
+| Preparación y calidad de datos | `rappiplus_orders_raw.csv` |
+| | `rappiplus_catalog.csv` |
+| | `rappiplus_marketing_spend.csv` |
+| Experimentación A/B | `experiment_checkout.csv` |
+
+## 🔍 Resultados del análisis
+
+### 1. Preparación y calidad de datos
+Limpié y validé los datos, revisando su calidad antes de cualquier análisis.
+
+### 2. Funnel de conversión y retención (SQL + Python)
+Con **SQL (CTEs)** y Python construí embudos multietapa para analizar conversión y retención por cohortes.
+
+- 🔻 La mayor pérdida de usuarios ocurre entre `add_to_cart` y `begin_checkout`: **2,339 usuarios**.
+- 📉 La conversión final del funnel es de **2.94 %**.
+- 🔁 La retención se mantiene estable (**40 %–44 %**) en las cohortes de enero a mayo de 2025.
+
+### 3. Experimento A/B (Python)
+Evalué el impacto del tratamiento con **Pandas, Matplotlib y SciPy**.
+
+- ⚖️ Sin mejora estadísticamente significativa en la conversión (**16.29 %** vs. **15.69 %**) ni en la duración de sesión.
+- 🖥️ Desktop convierte más que mobile (**18.29 %** vs. **13.65 %**).
+
+### 4. Dashboards en Power BI
+Construí **dos dashboards interactivos** con comunicación ejecutiva basada en el método **C-F-I** (Contexto, Hallazgo, Implicación).
+
+> 🖼️ _Aquí puedes insertar capturas de pantalla:_ `![Dashboard](img/dashboard1.png)`
+
+## ✅ Recomendaciones accionables
+
+1. **Investigar el abandono posterior al carrito**, donde se concentra la mayor pérdida de usuarios.
+2. **Analizar el funnel mobile** para cerrar la brecha de conversión frente a desktop.
+3. **No basar las decisiones sobre el tratamiento únicamente en la duración de sesión**, ya que no mostró un efecto significativo.
+
+## 📁 Contenido del repositorio
+
+- `S12 Estudiante_Proyecto_Final.ipynb`: notebook principal con limpieza, EDA, distribuciones, outliers y conclusiones.
+
+## ▶️ Cómo reproducir el análisis
+
+1. Abre `S12 Estudiante_Proyecto_Final.ipynb` en GitHub y haz clic en **Open in Colab**
+   [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/TU_USUARIO/TU_REPO/blob/main/S12%20Estudiante_Proyecto_Final.ipynb)
+2. Ejecuta las celdas en orden.
+3. El notebook carga automáticamente el dataset desde `/data/` o desde un enlace público, según corresponda.
+
+---
+
+👤 **Autor:** [egomez-DA](https://github.com/egomez-DA) · [LinkedIn](https://linkedin.com/in/erika-gómezle)
